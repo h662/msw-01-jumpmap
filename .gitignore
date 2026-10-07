@@ -1,0 +1,6 @@
+.DS_Store
+.mswai/
+.mcp.json
+.claude/
+AGENTS.md
+Environment/NativeScripts/
