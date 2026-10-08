@@ -3,16 +3,8 @@ script FloorBuilder extends Component
 
 	@ExecSpace("ServerOnly")
 	method void OnBeginPlay()
-		        log(_UtilLogic:RandomIntegerRange(1, 6))
-		        local layout = {
-		            { x = 0,    y = 0 },
-		            { x = 2.9,  y = 0.5 },
-		            { x = 5.8,  y = 1.0 },
-		            { x = 8.7,  y = 1.5 },
-		            { x = 11.6, y = 2.0 },
-		            { x = 14.5, y = 2.5 },
-		            { x = 17.4, y = 3.0 },
-		        }
+		        local maxGap = { [-1] = 0.8, [0] = 0.6, [1] = 0.5 }
+		        local layout = { { x = 0, y = 0 } }
 		        for i, spot in ipairs(layout) do
 		            local platform = self.Entity:GetChildByName("Platform" .. i)
 		            platform.TransformComponent.Position = Vector3(spot.x, spot.y, 0)
