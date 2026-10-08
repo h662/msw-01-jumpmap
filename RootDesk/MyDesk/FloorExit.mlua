@@ -3,4 +3,12 @@ script FloorExit extends Component
 
 	property integer nextFloor = 0
 
+	@ExecSpace("ServerOnly")
+	@EventSender("Self")
+	handler HandleTriggerEnterEvent(TriggerEnterEvent event)
+		local player = event.TriggerBodyEntity
+		local start = Vector3(0, self.nextFloor * 4 + 0.5, 0)
+		_TeleportService:TeleportToMapPosition(player, start, "map01")
+	end
+
 end
