@@ -1,0 +1,8 @@
+@Component
+script FloorBuilder extends Component
+
+    method void OnBeginPlay()
+        log("탑 1층을 만듭니다")
+    end
+
+end
