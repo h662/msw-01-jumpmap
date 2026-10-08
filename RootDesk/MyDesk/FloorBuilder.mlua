@@ -27,6 +27,11 @@ script FloorBuilder extends Component
 		            local platform = self.Entity:GetChildByName("Platform" .. (floor * 7 + i))
 		            platform.TransformComponent.Position = Vector3(spot.x, floor * 4 + spot.y, 0)
 		        end
+		        if floor < 2 then
+		            local last = layout[7]
+		            local exit = self.Entity:GetChildByName("Exit" .. (floor + 1))
+		            exit.TransformComponent.Position = Vector3(last.x, floor * 4 + last.y, 0)
+		        end
 	end
 
 end
