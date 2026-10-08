@@ -1,0 +1,6 @@
+@Component
+script FloorExit extends Component
+
+	property integer nextFloor = 0
+
+end
