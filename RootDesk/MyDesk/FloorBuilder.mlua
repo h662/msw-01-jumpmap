@@ -5,6 +5,15 @@ script FloorBuilder extends Component
 	method void OnBeginPlay()
 		        local maxGap = { [-1] = 0.8, [0] = 0.6, [1] = 0.5 }
 		        local layout = { { x = 0, y = 0 } }
+		        for i = 2, 7 do
+		            local before = layout[i - 1]
+		            local step = _UtilLogic:RandomIntegerRange(-1, 1)
+		            if before.y + step * 0.5 < 0 then
+		                step = 1
+		            end
+		            local gap = 0.3 + _UtilLogic:RandomDouble() * (maxGap[step] - 0.3)
+		            layout[i] = { x = before.x + 2.4 + gap, y = before.y + step * 0.5 }
+		        end
 		        for i, spot in ipairs(layout) do
 		            local platform = self.Entity:GetChildByName("Platform" .. i)
 		            platform.TransformComponent.Position = Vector3(spot.x, spot.y, 0)
