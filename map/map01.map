@@ -33,12 +33,12 @@
               "@type": "MOD.Core.MapComponent",
               "IsInstanceMap": false,
               "LeftBottom": {
-                "x": -2,
-                "y": -3
+                "x": -2.0,
+                "y": -3.0
               },
               "RightTop": {
-                "x": 20,
-                "y": 6
+                "x": 20.0,
+                "y": 12.0
               },
               "TileMapMode": 0,
               "UseCustomBound": true,
@@ -145,22 +145,22 @@
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": -0.225,
                 "y": -0.15,
-                "z": 1000
+                "z": 1000.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -204,27 +204,27 @@
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -235,16 +235,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -295,27 +295,27 @@
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 3,
-                "y": 0,
-                "z": 0
+                "x": 3.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -326,16 +326,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -386,27 +386,27 @@
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": 5.9,
                 "y": 0.5,
-                "z": 0
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -417,16 +417,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -477,27 +477,27 @@
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": 8.8,
-                "y": 1,
-                "z": 0
+                "y": 1.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -508,16 +508,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -568,27 +568,27 @@
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 12,
+                "x": 12.0,
                 "y": 0.5,
-                "z": 0
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -599,16 +599,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -659,27 +659,27 @@
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 15,
+                "x": 15.0,
                 "y": 0.5,
-                "z": 0
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -690,16 +690,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -750,27 +750,27 @@
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": 17.9,
-                "y": 1,
-                "z": 0
+                "y": 1.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -781,16 +781,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -834,27 +834,27 @@
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": -0.6,
                 "y": 0.6,
-                "z": 0
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -888,32 +888,39 @@
           "displayOrder": 11,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "f183b0bc-fbf7-4f3e-8be8-38a57560fa51",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 0,
-                "y": 4,
-                "z": 0
+                "x": 0.0,
+                "y": 4.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -924,16 +931,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -955,14 +962,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "f183b0bc-fbf7-4f3e-8be8-38a57560fa51",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -979,32 +979,39 @@
           "displayOrder": 12,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "a0e01e8f-047f-45e0-a414-8a6c9cd34849",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 3,
-                "y": 4,
-                "z": 0
+                "x": 3.0,
+                "y": 4.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1015,16 +1022,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1046,14 +1053,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "a0e01e8f-047f-45e0-a414-8a6c9cd34849",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1070,32 +1070,39 @@
           "displayOrder": 13,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "18d706b5-789f-46bf-926c-c65f3e52fa04",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": 5.9,
                 "y": 4.5,
-                "z": 0
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1106,16 +1113,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1137,14 +1144,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "18d706b5-789f-46bf-926c-c65f3e52fa04",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1161,32 +1161,39 @@
           "displayOrder": 14,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "11b69bec-6294-4d8c-bd2f-54f25de88805",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": 8.8,
-                "y": 5,
-                "z": 0
+                "y": 5.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1197,16 +1204,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1228,14 +1235,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "11b69bec-6294-4d8c-bd2f-54f25de88805",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1252,32 +1252,39 @@
           "displayOrder": 15,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "1d676491-5012-4896-a707-fde456a1af52",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 12,
+                "x": 12.0,
                 "y": 4.5,
-                "z": 0
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1288,16 +1295,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1319,14 +1326,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "1d676491-5012-4896-a707-fde456a1af52",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1343,32 +1343,39 @@
           "displayOrder": 16,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "0e7b5822-eb36-4756-ad6d-25b46e8e91ec",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 15,
+                "x": 15.0,
                 "y": 4.5,
-                "z": 0
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1379,16 +1386,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1410,14 +1417,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "0e7b5822-eb36-4756-ad6d-25b46e8e91ec",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1434,32 +1434,39 @@
           "displayOrder": 17,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "e14f2e46-83bc-451d-a6b3-bad96dc072d4",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": 17.9,
-                "y": 5,
-                "z": 0
+                "y": 5.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1470,16 +1477,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1501,14 +1508,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "e14f2e46-83bc-451d-a6b3-bad96dc072d4",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1525,32 +1525,39 @@
           "displayOrder": 18,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "0590e9ab-1549-4c06-ace3-a89f5d847f5d",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 0,
-                "y": 8,
-                "z": 0
+                "x": 0.0,
+                "y": 8.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1561,16 +1568,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1592,14 +1599,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "0590e9ab-1549-4c06-ace3-a89f5d847f5d",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1616,32 +1616,39 @@
           "displayOrder": 19,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "189bd096-3cdb-432e-847f-e55f938bb135",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 3,
-                "y": 8,
-                "z": 0
+                "x": 3.0,
+                "y": 8.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1652,16 +1659,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1683,14 +1690,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "189bd096-3cdb-432e-847f-e55f938bb135",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1707,32 +1707,39 @@
           "displayOrder": 20,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "00d726b2-f472-4d48-a283-8edb60813df1",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": 5.9,
                 "y": 8.5,
-                "z": 0
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1743,16 +1750,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1774,14 +1781,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "00d726b2-f472-4d48-a283-8edb60813df1",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1798,32 +1798,39 @@
           "displayOrder": 21,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "892f601d-52c9-4a08-b18b-25914e75188c",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": 8.8,
-                "y": 9,
-                "z": 0
+                "y": 9.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1834,16 +1841,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1865,14 +1872,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "892f601d-52c9-4a08-b18b-25914e75188c",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1889,32 +1889,39 @@
           "displayOrder": 22,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "e3d2ff4d-0d2e-4950-9477-37ef230d67ee",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 12,
+                "x": 12.0,
                 "y": 8.5,
-                "z": 0
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1925,16 +1932,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -1956,14 +1963,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "e3d2ff4d-0d2e-4950-9477-37ef230d67ee",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -1980,32 +1980,39 @@
           "displayOrder": 23,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "e32c5bea-62d9-4981-98c7-5bcff4917035",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
-                "x": 15,
+                "x": 15.0,
                 "y": 8.5,
-                "z": 0
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -2016,16 +2023,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -2047,14 +2054,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "e32c5bea-62d9-4981-98c7-5bcff4917035",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       },
       {
@@ -2071,32 +2071,39 @@
           "displayOrder": 24,
           "pathConstraints": "///",
           "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "694d208e-0a7e-42a3-a4b5-bac4de55c402",
+            "replaced_model_id": null
+          },
           "modelId": "foothold",
           "@components": [
             {
               "@type": "MOD.Core.TransformComponent",
               "Rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
               },
               "Position": {
                 "x": 17.9,
-                "y": 9,
-                "z": 0
+                "y": 9.0,
+                "z": 0.0
               },
               "QuaternionRotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
               },
               "Scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
               },
-              "ZRotation": 0,
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -2107,16 +2114,16 @@
               "FlipX": false,
               "FlipY": false,
               "OrderInLayer": 2,
-              "PlayRate": 1,
+              "PlayRate": 1.0,
               "RenderSetting": 0,
               "SortingLayer": "MapLayer0",
               "SpriteRUID": "3fc86edffacf432a85746e8d5c920e1d",
               "StartFrameIndex": 0,
               "Color": {
-                "r": 1,
-                "g": 1,
-                "b": 1,
-                "a": 1
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
               },
               "Enable": true
             },
@@ -2138,14 +2145,7 @@
               "Enable": true
             }
           ],
-          "@version": 1,
-          "origin": {
-            "type": "Model",
-            "entry_id": "foothold",
-            "sub_entity_id": null,
-            "root_entity_id": "694d208e-0a7e-42a3-a4b5-bac4de55c402",
-            "replaced_model_id": null
-          }
+          "@version": 1
         }
       }
     ]
