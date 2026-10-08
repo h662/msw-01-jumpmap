@@ -3,6 +3,13 @@ script FloorBuilder extends Component
 
 	@ExecSpace("ServerOnly")
 	method void OnBeginPlay()
+		        for floor = 0, 2 do
+		            self:BuildFloor(floor)
+		        end
+	end
+
+	@ExecSpace("ServerOnly")
+	method void BuildFloor(integer floor)
 		        local maxGap = { [-1] = 0.8, [0] = 0.6, [1] = 0.5 }
 		        local layout = { { x = 0, y = 0 } }
 		        for i = 2, 7 do
@@ -10,13 +17,15 @@ script FloorBuilder extends Component
 		            local step = _UtilLogic:RandomIntegerRange(-1, 1)
 		            if before.y + step * 0.5 < 0 then
 		                step = 1
+		            elseif before.y + step * 0.5 > 1.5 then
+		                step = -1
 		            end
 		            local gap = 0.3 + _UtilLogic:RandomDouble() * (maxGap[step] - 0.3)
 		            layout[i] = { x = before.x + 2.4 + gap, y = before.y + step * 0.5 }
 		        end
 		        for i, spot in ipairs(layout) do
-		            local platform = self.Entity:GetChildByName("Platform" .. i)
-		            platform.TransformComponent.Position = Vector3(spot.x, spot.y, 0)
+		            local platform = self.Entity:GetChildByName("Platform" .. (floor * 7 + i))
+		            platform.TransformComponent.Position = Vector3(spot.x, floor * 4 + spot.y, 0)
 		        end
 	end
 
