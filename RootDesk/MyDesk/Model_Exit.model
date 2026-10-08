@@ -21,7 +21,8 @@
         "MOD.Core.TransformComponent",
         "MOD.Core.SpriteRendererComponent",
         "MOD.Core.TagComponent",
-        "MOD.Core.TriggerComponent"
+        "MOD.Core.TriggerComponent",
+        "script.FloorExit"
       ],
       "Properties": [],
       "Values": [
