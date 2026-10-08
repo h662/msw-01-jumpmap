@@ -11,13 +11,9 @@ script FloorBuilder extends Component
             { x = 14.5, y = 2.5 },
             { x = 17.4, y = 3.0 },
         }
-        log(layout[1].x, layout[1].y)
-        log(layout[2].x, layout[2].y)
-        log(layout[3].x, layout[3].y)
-        log(layout[4].x, layout[4].y)
-        log(layout[5].x, layout[5].y)
-        log(layout[6].x, layout[6].y)
-        log(layout[7].x, layout[7].y)
+        for i, spot in ipairs(layout) do
+            log(i, spot.x, spot.y)
+        end
     end
 
 end
