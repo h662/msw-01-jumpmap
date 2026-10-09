@@ -12,7 +12,7 @@ script TowerClimber extends Component
 
 	@ExecSpace("ServerOnly")
 	method void ClimbTo(integer nextFloor)
-		if nextFloor <= self.floor then
+		if self.isTeleporting or nextFloor <= self.floor then
 			return
 		end
 		self.floor = nextFloor
@@ -29,6 +29,14 @@ script TowerClimber extends Component
 
 	@ExecSpace("ServerOnly")
 	method void OnUpdate(number delta)
+		if self.isTeleporting then
+			self.teleportSeconds += delta
+			local distance = self.Entity.TransformComponent.WorldPosition:Distance(self.teleportTarget)
+			if distance < 1 or self.teleportSeconds > 1 then
+				self.isTeleporting = false
+			end
+			return
+		end
 		local y = self.Entity.TransformComponent.WorldPosition.y
 		if y < self.floor * 4 - 1 then
 			self:GameOver()
