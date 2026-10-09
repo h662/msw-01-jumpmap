@@ -26,8 +26,16 @@ script TowerClimber extends Component
 	method void OnUpdate(number delta)
 		local y = self.Entity.TransformComponent.WorldPosition.y
 		if y < self.floor * 4 - 1 then
-			log("떨어짐")
+			self:GameOver()
 		end
+	end
+
+	@ExecSpace("ServerOnly")
+	method void GameOver()
+		self.floor = 0
+		log("게임오버")
+		local start = Vector3(0, 0.5, 0)
+		_TeleportService:TeleportToMapPosition(self.Entity, start, "map01")
 	end
 
 end
