@@ -14,4 +14,11 @@ script TowerClimber extends Component
 		_TeleportService:TeleportToMapPosition(self.Entity, start, "map01")
 	end
 
+	@ExecSpace("ClientOnly")
+	method void OnSyncProperty(string name, any value)
+		if name == "floor" then
+			log("floor " .. value)
+		end
+	end
+
 end
