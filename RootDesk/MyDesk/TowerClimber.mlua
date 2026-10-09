@@ -22,4 +22,12 @@ script TowerClimber extends Component
 		end
 	end
 
+	@ExecSpace("ServerOnly")
+	method void OnUpdate(number delta)
+		local y = self.Entity.TransformComponent.WorldPosition.y
+		if y < self.floor * 4 - 1 then
+			log("떨어짐")
+		end
+	end
+
 end
