@@ -1,6 +1,7 @@
 @Component
 script TowerClimber extends Component
 
+	@Sync
 	property integer floor = 0
 
 	@ExecSpace("ServerOnly")
