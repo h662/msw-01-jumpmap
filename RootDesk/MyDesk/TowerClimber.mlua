@@ -3,4 +3,15 @@ script TowerClimber extends Component
 
 	property integer floor = 0
 
+	@ExecSpace("ServerOnly")
+	method void ClimbTo(integer nextFloor)
+		if nextFloor <= self.floor then
+			return
+		end
+		self.floor = nextFloor
+		log("floor " .. self.floor)
+		local start = Vector3(0, nextFloor * 4 + 0.5, 0)
+		_TeleportService:TeleportToMapPosition(self.Entity, start, "map01")
+	end
+
 end
