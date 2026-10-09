@@ -7,8 +7,12 @@ script FloorExit extends Component
 	@EventSender("Self")
 	handler HandleTriggerEnterEvent(TriggerEnterEvent event)
 		local player = event.TriggerBodyEntity
-		local start = Vector3(0, self.nextFloor * 4 + 0.5, 0)
-		_TeleportService:TeleportToMapPosition(player, start, "map01")
+		---@type TowerClimber
+		local climber = player:GetComponent("script.TowerClimber")
+		if climber == nil then
+			return
+		end
+		climber:ClimbTo(self.nextFloor)
 	end
 
 end
