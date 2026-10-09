@@ -1,0 +1,6 @@
+@Component
+script TowerClimber extends Component
+
+	property integer floor = 0
+
+end
