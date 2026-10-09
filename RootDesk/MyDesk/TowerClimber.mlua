@@ -17,8 +17,7 @@ script TowerClimber extends Component
 		end
 		self.floor = nextFloor
 		log("floor " .. self.floor)
-		local start = Vector3(0, nextFloor * 4 + 0.5, 0)
-		_TeleportService:TeleportToMapPosition(self.Entity, start, "map01")
+		self:TeleportTo(Vector3(0, nextFloor * 4 + 0.5, 0))
 	end
 
 	@ExecSpace("ClientOnly")
@@ -40,8 +39,7 @@ script TowerClimber extends Component
 	method void GameOver()
 		self.floor = 0
 		log("게임오버")
-		local start = Vector3(0, 0.5, 0)
-		_TeleportService:TeleportToMapPosition(self.Entity, start, "map01")
+		self:TeleportTo(Vector3(0, 0.5, 0))
 	end
 
 	@ExecSpace("ServerOnly")
