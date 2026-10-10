@@ -45,7 +45,7 @@ script TowerClimber extends Component
 
 	@ExecSpace("ServerOnly")
 	method void GameOver()
-		self:ShowGameOver(self.floor + 1)
+		self:ShowGameOver(self.floor + 1, self.Entity.PlayerComponent.UserId)
 		self.floor = 0
 		log("게임오버")
 		self:TeleportTo(Vector3(0, 0.5, 0))
