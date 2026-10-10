@@ -24,6 +24,9 @@ script TowerHud extends Logic
 	method void ShowGameOver(integer reachedFloor)
 		self.reachedText.TextComponent.Text = "탑 " .. reachedFloor .. "층까지 올랐습니다"
 		self.gameOverPanel.Enable = true
+		_TimerService:SetTimerOnce(function()
+			self.gameOverPanel.Enable = false
+		end, 2.5)
 	end
 
 end
