@@ -5,7 +5,10 @@ script TowerHud extends Logic
 
 	@ExecSpace("ClientOnly")
 	method void OnUpdate(number delta)
-		
+		local player = _UserService.LocalPlayer
+		---@type TowerClimber
+		local climber = player:GetComponent("script.TowerClimber")
+		self.floorText.TextComponent.Text = "탑 " .. (climber.floor + 1) .. "층"
 	end
 
 end
