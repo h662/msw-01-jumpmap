@@ -58,4 +58,9 @@ script TowerClimber extends Component
 		_TeleportService:TeleportToMapPosition(self.Entity, target, "map01")
 	end
 
+	@ExecSpace("Client")
+	method void ShowGameOver(integer reachedFloor)
+		_TowerHud:ShowGameOver(reachedFloor)
+	end
+
 end
