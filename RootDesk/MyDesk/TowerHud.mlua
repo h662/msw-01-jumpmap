@@ -5,6 +5,8 @@ script TowerHud extends Logic
 
 	property Entity gameOverPanel = "02f1a3e8-16f5-41e7-89c6-47d80bb613ce"
 
+	property Entity reachedText = "714de251-b3d8-427b-80a2-b54a0ccf6e1f"
+
 	@ExecSpace("ClientOnly")
 	method void OnUpdate(number delta)
 		local player = _UserService.LocalPlayer
@@ -16,6 +18,12 @@ script TowerHud extends Logic
 	@ExecSpace("ClientOnly")
 	method void OnBeginPlay()
 		self.gameOverPanel.Enable = false
+	end
+
+	@ExecSpace("ClientOnly")
+	method void ShowGameOver(integer reachedFloor)
+		self.reachedText.TextComponent.Text = "탑 " .. reachedFloor .. "층까지 올랐습니다"
+		self.gameOverPanel.Enable = true
 	end
 
 end
