@@ -1,0 +1,11 @@
+@Logic
+script TowerHud extends Logic
+
+	property Entity floorText = "5e1d9b4c-7048-4b56-ae66-2485c7b9fe1e"
+
+	@ExecSpace("ClientOnly")
+	method void OnUpdate(number delta)
+		
+	end
+
+end
