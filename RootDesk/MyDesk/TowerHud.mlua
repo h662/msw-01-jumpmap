@@ -3,12 +3,19 @@ script TowerHud extends Logic
 
 	property Entity floorText = "5e1d9b4c-7048-4b56-ae66-2485c7b9fe1e"
 
+	property Entity gameOverPanel = "02f1a3e8-16f5-41e7-89c6-47d80bb613ce"
+
 	@ExecSpace("ClientOnly")
 	method void OnUpdate(number delta)
 		local player = _UserService.LocalPlayer
 		---@type TowerClimber
 		local climber = player:GetComponent("script.TowerClimber")
 		self.floorText.TextComponent.Text = "탑 " .. (climber.floor + 1) .. "층"
+	end
+
+	@ExecSpace("ClientOnly")
+	method void OnBeginPlay()
+		self.gameOverPanel.Enable = false
 	end
 
 end
