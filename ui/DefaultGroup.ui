@@ -1479,6 +1479,11 @@
                 "x": 0.0,
                 "y": -45.0
               },
+              "Rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
               "Position": {
                 "x": 0.0,
                 "y": -45.0,
@@ -1490,6 +1495,7 @@
                 "z": 0.0,
                 "w": 1.0
               },
+              "ZRotation": 0.0,
               "Enable": true
             },
             {
@@ -1514,6 +1520,117 @@
               },
               "OverrideSorting": false,
               "Text": "탑 3층까지 올랐습니다",
+              "Enable": true
+            }
+          ],
+          "@version": 1
+        }
+      },
+      {
+        "id": "72615eeb-1f3d-4098-8497-0fdc9aae7be4",
+        "path": "/ui/DefaultGroup/BestText",
+        "componentNames": "MOD.Core.UITransformComponent,MOD.Core.SpriteGUIRendererComponent,MOD.Core.TextComponent",
+        "jsonString": {
+          "name": "BestText",
+          "path": "/ui/DefaultGroup/BestText",
+          "nameEditable": true,
+          "enable": true,
+          "visible": true,
+          "localize": true,
+          "displayOrder": 6,
+          "pathConstraints": "///",
+          "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "uitext",
+            "sub_entity_id": null,
+            "root_entity_id": "5e1d9b4c-7048-4b56-ae66-2485c7b9fe1e",
+            "replaced_model_id": null
+          },
+          "modelId": "uitext",
+          "@components": [
+            {
+              "@type": "MOD.Core.UITransformComponent",
+              "AlignmentOption": 3,
+              "AnchorsMax": {
+                "x": 0.5,
+                "y": 1.0
+              },
+              "AnchorsMin": {
+                "x": 0.5,
+                "y": 1.0
+              },
+              "MobileOnly": false,
+              "OffsetMax": {
+                "x": 150.0,
+                "y": -100.0
+              },
+              "OffsetMin": {
+                "x": -150.0,
+                "y": -200.0
+              },
+              "Pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "RectSize": {
+                "x": 300.0,
+                "y": 100.0
+              },
+              "UIMode": 1,
+              "UIVersion": 2,
+              "anchoredPosition": {
+                "x": 0.0,
+                "y": -150.0
+              },
+              "Rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "Position": {
+                "x": 0.0,
+                "y": 390.0,
+                "z": 0.0
+              },
+              "QuaternionRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+              },
+              "ZRotation": 0.0,
+              "Enable": true
+            },
+            {
+              "@type": "MOD.Core.SpriteGUIRendererComponent",
+              "OverrideSorting": false,
+              "Enable": true
+            },
+            {
+              "@type": "MOD.Core.TextComponent",
+              "FontColor": {
+                "r": 1.0,
+                "g": 0.847058833,
+                "b": 0.2901961,
+                "a": 1.0
+              },
+              "FontSize": 32,
+              "MaxSize": 48,
+              "MinSize": 10,
+              "OutlineColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+              },
+              "OutlineDistance": {
+                "x": 1.0,
+                "y": -1.0
+              },
+              "OverrideSorting": false,
+              "Text": "최고 0층",
+              "UseOutLine": true,
               "Enable": true
             }
           ],
