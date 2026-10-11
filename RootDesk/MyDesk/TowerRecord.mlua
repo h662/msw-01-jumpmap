@@ -11,6 +11,10 @@ script TowerRecord extends Component
 		end
 		self.bestFloor = reachedFloor
 		log("최고 기록 " .. self.bestFloor)
+		local storage = _DataStorageService:GetUserDataStorage(self.Entity.PlayerComponent.ProfileCode)
+		storage:SetAsync("TowerBest", tostring(self.bestFloor), function(errorCode, key)
+			log("저장 " .. errorCode)
+		end)
 	end
 
 end
