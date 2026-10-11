@@ -17,4 +17,15 @@ script TowerRecord extends Component
 		end)
 	end
 
+	@ExecSpace("ServerOnly")
+	method void OnBeginPlay()
+		local storage = _DataStorageService:GetUserDataStorage(self.Entity.PlayerComponent.ProfileCode)
+		local errorCode, saved = storage:GetAndWait("TowerBest")
+		if errorCode ~= 0 then
+			return
+		end
+		self.bestFloor = tonumber(saved)
+		log("불러옴 " .. self.bestFloor)
+	end
+
 end
