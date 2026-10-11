@@ -1,0 +1,16 @@
+@Component
+script TowerRecord extends Component
+
+	@Sync
+	property integer bestFloor = 0
+
+	@ExecSpace("ServerOnly")
+	method void Reached(integer reachedFloor)
+		if reachedFloor <= self.bestFloor then
+			return
+		end
+		self.bestFloor = reachedFloor
+		log("최고 기록 " .. self.bestFloor)
+	end
+
+end

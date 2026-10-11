@@ -18,7 +18,8 @@
       "BaseModelId": "player",
       "Id": "defaultplayer",
       "Components": [
-        "script.TowerClimber"
+        "script.TowerClimber",
+        "script.TowerRecord"
       ],
       "Properties": [],
       "Values": [
