@@ -17,7 +17,11 @@ script TowerHud extends Logic
 		self.floorText.TextComponent.Text = "탑 " .. (climber.floor + 1) .. "층"
 		---@type TowerRecord
 		local record = player:GetComponent("script.TowerRecord")
-		self.bestText.TextComponent.Text = "최고 " .. record.bestFloor .. "층"
+		if record.bestFloor == 0 then
+			self.bestText.TextComponent.Text = "최고 기록 없음"
+		else
+			self.bestText.TextComponent.Text = "최고 " .. record.bestFloor .. "층"
+		end
 	end
 
 	@ExecSpace("ClientOnly")
