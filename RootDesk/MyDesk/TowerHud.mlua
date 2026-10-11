@@ -7,12 +7,17 @@ script TowerHud extends Logic
 
 	property Entity reachedText = "714de251-b3d8-427b-80a2-b54a0ccf6e1f"
 
+	property Entity bestText = "72615eeb-1f3d-4098-8497-0fdc9aae7be4"
+
 	@ExecSpace("ClientOnly")
 	method void OnUpdate(number delta)
 		local player = _UserService.LocalPlayer
 		---@type TowerClimber
 		local climber = player:GetComponent("script.TowerClimber")
 		self.floorText.TextComponent.Text = "탑 " .. (climber.floor + 1) .. "층"
+		---@type TowerRecord
+		local record = player:GetComponent("script.TowerRecord")
+		self.bestText.TextComponent.Text = "최고 " .. record.bestFloor .. "층"
 	end
 
 	@ExecSpace("ClientOnly")
