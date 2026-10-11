@@ -16,6 +16,9 @@ script TowerClimber extends Component
 			return
 		end
 		self.floor = nextFloor
+		---@type TowerRecord
+		local record = self.Entity:GetComponent("script.TowerRecord")
+		record:Reached(nextFloor + 1)
 		log("floor " .. self.floor)
 		self:TeleportTo(Vector3(0, nextFloor * 4 + 0.5, 0))
 	end
