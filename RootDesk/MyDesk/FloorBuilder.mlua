@@ -32,8 +32,17 @@ script FloorBuilder extends Component
 		            layout[i] = { kind = kind, x = before.x + half[before.kind] + gap + half[kind], y = before.y + step * 0.5 }
 		        end
 		        for i, spot in ipairs(layout) do
-		            local platform = self.Entity:GetChildByName("Platform" .. (floor * 7 + i))
-		            platform.TransformComponent.Position = Vector3(spot.x, floor * 4 + spot.y, 0)
+		            local long = self.Entity:GetChildByName("Platform" .. (floor * 7 + i))
+		            local short = self.Entity:GetChildByName("Short" .. (floor * 7 + i))
+		            local here = Vector3(spot.x, floor * 4 + spot.y, 0)
+		            local away = Vector3(-30, 0, 0)
+		            if spot.kind == "Short" then
+		                short.TransformComponent.Position = here
+		                long.TransformComponent.Position = away
+		            else
+		                long.TransformComponent.Position = here
+		                short.TransformComponent.Position = away
+		            end
 		        end
 		        if floor < 2 then
 		            local last = layout[7]
