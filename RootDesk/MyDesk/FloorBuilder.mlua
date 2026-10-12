@@ -1,6 +1,10 @@
 @Component
 script FloorBuilder extends Component
 
+	property integer hardestFloor = 10
+
+	property number gapSqueeze = 0.7
+
 	@ExecSpace("ServerOnly")
 	method void OnBeginPlay()
 		        for floor = 0, 2 do
