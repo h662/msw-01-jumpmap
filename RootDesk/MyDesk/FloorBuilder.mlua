@@ -71,4 +71,13 @@ script FloorBuilder extends Component
 		        self.built[floor] = pieces
 	end
 
+	@ExecSpace("ServerOnly")
+	method void ReleaseFloor(integer floor)
+		        for i, piece in ipairs(self.built[floor]) do
+		            piece.entity.TransformComponent.Position = Vector3(-30, 0, 0)
+		            table.insert(self.stock[piece.kind], piece.entity)
+		        end
+		        self.built[floor] = nil
+	end
+
 end
