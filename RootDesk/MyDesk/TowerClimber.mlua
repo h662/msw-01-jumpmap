@@ -21,6 +21,9 @@ script TowerClimber extends Component
 		record:Reached(nextFloor + 1)
 		log("floor " .. self.floor)
 		self:TeleportTo(Vector3(0, nextFloor * 4 + 0.5, 0))
+		---@type FloorBuilder
+		local builder = self.Entity.CurrentMap:GetComponent("script.FloorBuilder")
+		builder:RefreshFloors()
 	end
 
 	@ExecSpace("ClientOnly")
@@ -52,6 +55,9 @@ script TowerClimber extends Component
 		self.floor = 0
 		log("게임오버")
 		self:TeleportTo(Vector3(0, 0.5, 0))
+		---@type FloorBuilder
+		local builder = self.Entity.CurrentMap:GetComponent("script.FloorBuilder")
+		builder:RefreshFloors()
 	end
 
 	@ExecSpace("ServerOnly")
