@@ -14,7 +14,7 @@ script FloorBuilder extends Component
 
 	@ExecSpace("ServerOnly")
 	method void BuildFloor(integer floor)
-		        local hardness = math.min(1, floor / 10)
+		        local hardness = math.min(1, floor / self.hardestFloor)
 		        log("floor " .. floor .. " 어려움 " .. hardness)
 		        local maxGap = { [-1] = 0.8, [0] = 0.6, [1] = 0.5 }
 		        local half = { Long = 1.2, Short = 0.5 }
@@ -32,7 +32,7 @@ script FloorBuilder extends Component
 		            elseif before.y + step * 0.5 > 1.5 then
 		                step = -1
 		            end
-		            local smallestGap = 0.3 + hardness * 0.7 * (maxGap[step] - 0.3)
+		            local smallestGap = 0.3 + hardness * self.gapSqueeze * (maxGap[step] - 0.3)
 		            local gap = smallestGap + _UtilLogic:RandomDouble() * (maxGap[step] - smallestGap)
 		            layout[i] = { kind = kind, x = before.x + half[before.kind] + gap + half[kind], y = before.y + step * 0.5 }
 		        end
