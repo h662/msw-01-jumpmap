@@ -26,9 +26,7 @@ script FloorBuilder extends Component
 		            exit.TransformComponent.Position = away
 		            table.insert(self.stock.Exit, exit)
 		        end
-		        for floor = 0, 2 do
-		            self:BuildFloor(floor)
-		        end
+		        self:RefreshFloors()
 	end
 
 	@ExecSpace("ServerOnly")
@@ -78,6 +76,31 @@ script FloorBuilder extends Component
 		            table.insert(self.stock[piece.kind], piece.entity)
 		        end
 		        self.built[floor] = nil
+	end
+
+	@ExecSpace("ServerOnly")
+	method void RefreshFloors()
+		        local needed = {}
+		        for i, user in ipairs(_UserService.UserEntities.Values) do
+		            ---@type TowerClimber
+		            local climber = user:GetComponent("script.TowerClimber")
+		            needed[climber.floor] = true
+		            needed[climber.floor + 1] = true
+		        end
+		        if next(needed) == nil then
+		            needed[0] = true
+		            needed[1] = true
+		        end
+		        for floor in pairs(self.built) do
+		            if not needed[floor] then
+		                self:ReleaseFloor(floor)
+		            end
+		        end
+		        for floor in pairs(needed) do
+		            if self.built[floor] == nil then
+		                self:BuildFloor(floor)
+		            end
+		        end
 	end
 
 end
