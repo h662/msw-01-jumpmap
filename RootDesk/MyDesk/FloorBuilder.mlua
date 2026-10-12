@@ -10,6 +10,7 @@ script FloorBuilder extends Component
 
 	@ExecSpace("ServerOnly")
 	method void BuildFloor(integer floor)
+		        local hardness = math.min(1, floor / 10)
 		        local maxGap = { [-1] = 0.8, [0] = 0.6, [1] = 0.5 }
 		        local layout = { { x = 0, y = 0 } }
 		        for i = 2, 7 do
