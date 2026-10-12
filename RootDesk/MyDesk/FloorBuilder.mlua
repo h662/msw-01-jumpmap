@@ -5,6 +5,8 @@ script FloorBuilder extends Component
 
 	property number gapSqueeze = 0.7
 
+	property table stock = {}
+
 	@ExecSpace("ServerOnly")
 	method void OnBeginPlay()
 		        for floor = 0, 2 do
