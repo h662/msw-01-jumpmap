@@ -7,6 +7,8 @@ script FloorBuilder extends Component
 
 	property table stock = {}
 
+	property table built = {}
+
 	@ExecSpace("ServerOnly")
 	method void OnBeginPlay()
 		        local away = Vector3(-30, 0, 0)
@@ -31,6 +33,7 @@ script FloorBuilder extends Component
 
 	@ExecSpace("ServerOnly")
 	method void BuildFloor(integer floor)
+		        local pieces = {}
 		        local hardness = math.min(1, floor / self.hardestFloor)
 		        log("floor " .. floor .. " 어려움 " .. hardness)
 		        local maxGap = { [-1] = 0.8, [0] = 0.6, [1] = 0.5 }
@@ -56,6 +59,7 @@ script FloorBuilder extends Component
 		        for i, spot in ipairs(layout) do
 		            local platform = table.remove(self.stock[spot.kind])
 		            platform.TransformComponent.Position = Vector3(spot.x, floor * 4 + spot.y, 0)
+		            table.insert(pieces, { kind = spot.kind, entity = platform })
 		        end
 		        local last = layout[7]
 		        local exit = table.remove(self.stock.Exit)
@@ -63,6 +67,8 @@ script FloorBuilder extends Component
 		        ---@type FloorExit
 		        local floorExit = exit:GetComponent("script.FloorExit")
 		        floorExit.nextFloor = floor + 1
+		        table.insert(pieces, { kind = "Exit", entity = exit })
+		        self.built[floor] = pieces
 	end
 
 end
