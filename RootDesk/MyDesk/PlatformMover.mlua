@@ -10,12 +10,10 @@ script PlatformMover extends Component
 	property boolean isMoving = false
 
 	@ExecSpace("ServerOnly")
-	method void OnBeginPlay()
-		self.center = self.Entity.TransformComponent.Position
-	end
-
-	@ExecSpace("ServerOnly")
 	method void OnUpdate(number delta)
+		if not self.isMoving then
+			return
+		end
 		self.elapsed += delta
 		local offset = math.sin(self.elapsed * 2 * math.pi / 3) * self.swing
 		self.Entity.TransformComponent.Position = self.center + Vector3(offset, 0, 0)
@@ -23,12 +21,15 @@ script PlatformMover extends Component
 
 	@ExecSpace("ServerOnly")
 	method void StartMoving(Vector3 newCenter)
-		
+		self.center = newCenter
+		self.elapsed = 0
+		self.isMoving = true
+		self.Entity.TransformComponent.Position = newCenter
 	end
 
 	@ExecSpace("ServerOnly")
 	method void StopMoving()
-		
+		self.isMoving = false
 	end
 
 end
