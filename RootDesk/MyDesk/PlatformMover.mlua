@@ -1,7 +1,7 @@
 @Component
 script PlatformMover extends Component
 
-	property number swing = 0
+	property number swing = 0.6
 
 	property Vector3 center = Vector3(0,0,0)
 
@@ -9,7 +9,7 @@ script PlatformMover extends Component
 
 	@ExecSpace("ServerOnly")
 	method void OnBeginPlay()
-		
+		self.center = self.Entity.TransformComponent.Position
 	end
 
 	@ExecSpace("ServerOnly")
