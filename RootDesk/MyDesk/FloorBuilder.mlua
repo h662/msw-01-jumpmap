@@ -91,6 +91,11 @@ script FloorBuilder extends Component
 	@ExecSpace("ServerOnly")
 	method void ReleaseFloor(integer floor)
 		        for i, piece in ipairs(self.built[floor]) do
+		            if piece.kind == "Mover" then
+		                ---@type PlatformMover
+		                local mover = piece.entity:GetComponent("script.PlatformMover")
+		                mover:StopMoving()
+		            end
 		            piece.entity.TransformComponent.Position = Vector3(-30, 0, 0)
 		            table.insert(self.stock[piece.kind], piece.entity)
 		        end
