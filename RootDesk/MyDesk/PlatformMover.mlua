@@ -7,6 +7,8 @@ script PlatformMover extends Component
 
 	property number elapsed = 0
 
+	property boolean isMoving = false
+
 	@ExecSpace("ServerOnly")
 	method void OnBeginPlay()
 		self.center = self.Entity.TransformComponent.Position
@@ -17,6 +19,16 @@ script PlatformMover extends Component
 		self.elapsed += delta
 		local offset = math.sin(self.elapsed * 2 * math.pi / 3) * self.swing
 		self.Entity.TransformComponent.Position = self.center + Vector3(offset, 0, 0)
+	end
+
+	@ExecSpace("ServerOnly")
+	method void StartMoving(Vector3 newCenter)
+		
+	end
+
+	@ExecSpace("ServerOnly")
+	method void StopMoving()
+		
 	end
 
 end
