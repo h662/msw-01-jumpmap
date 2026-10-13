@@ -14,7 +14,9 @@ script PlatformMover extends Component
 
 	@ExecSpace("ServerOnly")
 	method void OnUpdate(number delta)
-		
+		self.elapsed += delta
+		local offset = math.sin(self.elapsed * 2 * math.pi / 3) * self.swing
+		self.Entity.TransformComponent.Position = self.center + Vector3(offset, 0, 0)
 	end
 
 end
