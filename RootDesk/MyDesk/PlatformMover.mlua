@@ -1,0 +1,20 @@
+@Component
+script PlatformMover extends Component
+
+	property number swing = 0
+
+	property Vector3 center = Vector3(0,0,0)
+
+	property number elapsed = 0
+
+	@ExecSpace("ServerOnly")
+	method void OnBeginPlay()
+		
+	end
+
+	@ExecSpace("ServerOnly")
+	method void OnUpdate(number delta)
+		
+	end
+
+end
