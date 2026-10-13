@@ -40,7 +40,7 @@ script FloorBuilder extends Component
 		        local hardness = math.min(1, floor / self.hardestFloor)
 		        log("floor " .. floor .. " 어려움 " .. hardness)
 		        local maxGap = { [-1] = 0.8, [0] = 0.6, [1] = 0.5 }
-		        local half = { Long = 1.2, Short = 0.5, Mover = 0.5 }
+		        local half = { Long = 1.2, Short = 0.5, Mover = 0.5 + 0.6 }
 		        local shortChance = 0.5 + hardness * 0.3
 		        local layout = { { kind = "Long", x = 0, y = 0 } }
 		        local moverAt = 0
