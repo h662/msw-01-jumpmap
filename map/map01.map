@@ -5015,7 +5015,7 @@
       {
         "id": "6d0ad43b-5744-4ea3-a221-c773c2cdc073",
         "path": "/maps/map01/Fire1",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.StateAnimationComponent,MOD.Core.SpriteRendererComponent,script.Trap",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.StateAnimationComponent,MOD.Core.SpriteRendererComponent,script.Trap,script.TrapBlinker",
         "jsonString": {
           "name": "Fire1",
           "path": "/maps/map01/Fire1",
@@ -5062,6 +5062,10 @@
             },
             {
               "@type": "script.Trap",
+              "Enable": true
+            },
+            {
+              "@type": "script.TrapBlinker",
               "Enable": true
             }
           ],

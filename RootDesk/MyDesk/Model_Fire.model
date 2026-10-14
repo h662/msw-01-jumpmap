@@ -21,7 +21,8 @@
         "MOD.Core.TransformComponent",
         "MOD.Core.StateAnimationComponent",
         "MOD.Core.SpriteRendererComponent",
-        "script.Trap"
+        "script.Trap",
+        "script.TrapBlinker"
       ],
       "Properties": [],
       "Values": [
