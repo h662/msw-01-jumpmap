@@ -5011,6 +5011,62 @@
           ],
           "@version": 1
         }
+      },
+      {
+        "id": "6d0ad43b-5744-4ea3-a221-c773c2cdc073",
+        "path": "/maps/map01/Fire1",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.StateAnimationComponent,MOD.Core.SpriteRendererComponent,script.Trap",
+        "jsonString": {
+          "name": "Fire1",
+          "path": "/maps/map01/Fire1",
+          "nameEditable": true,
+          "enable": true,
+          "visible": true,
+          "localize": false,
+          "displayOrder": 64,
+          "pathConstraints": "///",
+          "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "c47705c7-40f6-4297-a7dd-c72eb8d73ac1",
+            "sub_entity_id": null,
+            "root_entity_id": "6d0ad43b-5744-4ea3-a221-c773c2cdc073",
+            "replaced_model_id": null
+          },
+          "modelId": "c47705c7-40f6-4297-a7dd-c72eb8d73ac1",
+          "@components": [
+            {
+              "@type": "MOD.Core.TransformComponent",
+              "Position": {
+                "x": 0.9,
+                "y": 0.33,
+                "z": 0.0
+              },
+              "QuaternionRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+              },
+              "Enable": true
+            },
+            {
+              "@type": "MOD.Core.StateAnimationComponent",
+              "Enable": true
+            },
+            {
+              "@type": "MOD.Core.SpriteRendererComponent",
+              "ActionSheet": {},
+              "RenderSetting": 0,
+              "Enable": true
+            },
+            {
+              "@type": "script.Trap",
+              "Enable": true
+            }
+          ],
+          "@version": 1
+        }
       }
     ]
   }
