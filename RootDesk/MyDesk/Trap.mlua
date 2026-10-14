@@ -9,6 +9,9 @@ script Trap extends Component
 
 	@ExecSpace("ServerOnly")
 	method void OnUpdate(number delta)
+		if not self.isActive then
+			return
+		end
 		local spike = self.Entity.TransformComponent.WorldPosition
 		for i, user in ipairs(_UserService.UserEntities.Values) do
 			local feet = user.TransformComponent.WorldPosition
