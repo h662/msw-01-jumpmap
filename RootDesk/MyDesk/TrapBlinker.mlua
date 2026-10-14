@@ -9,7 +9,10 @@ script TrapBlinker extends Component
 
 	@ExecSpace("ServerOnly")
 	method void OnUpdate(number delta)
-		
+		self.elapsed += delta
+		if self.elapsed >= self.blinkSeconds then
+			self.elapsed = 0
+		end
 	end
 
 end
