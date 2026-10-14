@@ -13,6 +13,9 @@ script TrapBlinker extends Component
 		if self.elapsed >= self.blinkSeconds then
 			self.elapsed = 0
 			self.isLit = not self.isLit
+			---@type Trap
+			local trap = self.Entity:GetComponent("script.Trap")
+			trap.isActive = self.isLit
 			if self.isLit then
 				self.Entity.SpriteRendererComponent.Color = Color(1, 1, 1, 1)
 			else
