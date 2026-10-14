@@ -1,0 +1,15 @@
+@Component
+script TrapBlinker extends Component
+
+	property number blinkSeconds = 1.5
+
+	property number elapsed = 0
+
+	property boolean isLit = true
+
+	@ExecSpace("ServerOnly")
+	method void OnUpdate(number delta)
+		
+	end
+
+end
