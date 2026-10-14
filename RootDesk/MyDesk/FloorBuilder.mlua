@@ -88,6 +88,18 @@ script FloorBuilder extends Component
 		                spikeAt = longs[_UtilLogic:RandomIntegerRange(1, #longs)]
 		            end
 		        end
+		        local fireAt = 0
+		        if floor >= 4 then
+		            local shorts = {}
+		            for i = 2, 6 do
+		                if layout[i].kind == "Short" then
+		                    table.insert(shorts, i)
+		                end
+		            end
+		            if #shorts > 0 then
+		                fireAt = shorts[_UtilLogic:RandomIntegerRange(1, #shorts)]
+		            end
+		        end
 		        for i, spot in ipairs(layout) do
 		            local platform = table.remove(self.stock[spot.kind])
 		            local here = Vector3(spot.x, floor * 4 + spot.y, 0)
