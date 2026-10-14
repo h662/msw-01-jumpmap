@@ -116,6 +116,11 @@ script FloorBuilder extends Component
 		                spike.TransformComponent.Position = here + Vector3(0, 0.26, 0)
 		                table.insert(pieces, { kind = "Spike", entity = spike })
 		            end
+		            if i == fireAt then
+		                local fire = table.remove(self.stock.Fire)
+		                fire.TransformComponent.Position = here + Vector3(0, 0.33, 0)
+		                table.insert(pieces, { kind = "Fire", entity = fire })
+		            end
 		        end
 		        local last = layout[7]
 		        local exit = table.remove(self.stock.Exit)
