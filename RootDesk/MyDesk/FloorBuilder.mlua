@@ -94,6 +94,11 @@ script FloorBuilder extends Component
 		                platform.TransformComponent.Position = here
 		            end
 		            table.insert(pieces, { kind = spot.kind, entity = platform })
+		            if i == spikeAt then
+		                local spike = table.remove(self.stock.Spike)
+		                spike.TransformComponent.Position = here + Vector3(0, 0.26, 0)
+		                table.insert(pieces, { kind = "Spike", entity = spike })
+		            end
 		        end
 		        local last = layout[7]
 		        local exit = table.remove(self.stock.Exit)
