@@ -71,6 +71,18 @@ script FloorBuilder extends Component
 		            local gap = smallestGap + _UtilLogic:RandomDouble() * (maxGap[step] - smallestGap)
 		            layout[i] = { kind = kind, x = before.x + half[before.kind] + gap + half[kind], y = before.y + step * 0.5 }
 		        end
+		        local spikeAt = 0
+		        if floor >= 3 then
+		            local longs = {}
+		            for i = 2, 6 do
+		                if layout[i].kind == "Long" then
+		                    table.insert(longs, i)
+		                end
+		            end
+		            if #longs > 0 then
+		                spikeAt = longs[_UtilLogic:RandomIntegerRange(1, #longs)]
+		            end
+		        end
 		        for i, spot in ipairs(layout) do
 		            local platform = table.remove(self.stock[spot.kind])
 		            local here = Vector3(spot.x, floor * 4 + spot.y, 0)
