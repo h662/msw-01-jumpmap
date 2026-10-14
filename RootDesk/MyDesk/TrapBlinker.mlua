@@ -12,6 +12,7 @@ script TrapBlinker extends Component
 		self.elapsed += delta
 		if self.elapsed >= self.blinkSeconds then
 			self.elapsed = 0
+			self.isLit = not self.isLit
 		end
 	end
 
