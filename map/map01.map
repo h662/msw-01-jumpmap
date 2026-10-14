@@ -4579,7 +4579,7 @@
       {
         "id": "bad35e76-6c7e-4bb6-a9af-ffa2caeaf521",
         "path": "/maps/map01/Spike1",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.StateAnimationComponent,MOD.Core.SpriteRendererComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.StateAnimationComponent,MOD.Core.SpriteRendererComponent,script.Trap",
         "jsonString": {
           "name": "Spike1",
           "path": "/maps/map01/Spike1",
@@ -4622,6 +4622,10 @@
               "@type": "MOD.Core.SpriteRendererComponent",
               "ActionSheet": {},
               "RenderSetting": 0,
+              "Enable": true
+            },
+            {
+              "@type": "script.Trap",
               "Enable": true
             }
           ],

@@ -20,7 +20,8 @@
       "Components": [
         "MOD.Core.TransformComponent",
         "MOD.Core.StateAnimationComponent",
-        "MOD.Core.SpriteRendererComponent"
+        "MOD.Core.SpriteRendererComponent",
+        "script.Trap"
       ],
       "Properties": [],
       "Values": [
