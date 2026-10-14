@@ -10,6 +10,13 @@ script Trap extends Component
 		local spike = self.Entity.TransformComponent.WorldPosition
 		for i, user in ipairs(_UserService.UserEntities.Values) do
 			local feet = user.TransformComponent.WorldPosition
+			if math.abs(feet.x - spike.x) < self.halfWidth and math.abs(feet.y - spike.y) < self.halfHeight then
+				---@type TowerClimber
+				local climber = user:GetComponent("script.TowerClimber")
+				if not climber.isTeleporting then
+					climber:GameOver()
+				end
+			end
 		end
 	end
 
