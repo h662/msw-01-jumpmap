@@ -5,6 +5,8 @@ script Trap extends Component
 
 	property number halfHeight = 0.2
 
+	property boolean isActive = true
+
 	@ExecSpace("ServerOnly")
 	method void OnUpdate(number delta)
 		local spike = self.Entity.TransformComponent.WorldPosition
