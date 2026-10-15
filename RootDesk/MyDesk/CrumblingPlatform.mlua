@@ -9,6 +9,8 @@ script CrumblingPlatform extends Component
 
 	property number goneSeconds = 3
 
+	property Vector3 home = Vector3(0,0,0)
+
 	@ExecSpace("ServerOnly")
 	method void OnUpdate(number delta)
 		if self.state == "Waiting" then
@@ -29,6 +31,11 @@ script CrumblingPlatform extends Component
 		if nextState == "Shaking" then
 			self.Entity.SpriteRendererComponent.Color = Color(1, 0.55, 0.55, 1)
 		end
+	end
+
+	@ExecSpace("ServerOnly")
+	method void OnBeginPlay()
+		
 	end
 
 end
