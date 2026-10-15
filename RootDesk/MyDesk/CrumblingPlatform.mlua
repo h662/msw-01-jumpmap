@@ -13,11 +13,17 @@ script CrumblingPlatform extends Component
 
 	@ExecSpace("ServerOnly")
 	method void OnUpdate(number delta)
-		if self.state == "Waiting" then
+		if self.state == "Arriving" then
+			self.timer += delta
+			if self.timer >= 2 then
+				self:ChangeState("Waiting")
+			end
+		elseif self.state == "Waiting" then
 			local before = self.timer
 			self.timer += delta
 			if before < 1 and self.timer >= 1 then
 				self.Entity.TransformComponent.Position = self.home + Vector3(0.01, 0, 0)
+			elseif before < 1.1 and self.timer >= 1.1 then
 				self.Entity.TransformComponent.Position = self.home
 			end
 			for i, user in ipairs(_UserService.UserEntities.Values) do
@@ -46,7 +52,12 @@ script CrumblingPlatform extends Component
 	method void ChangeState(string nextState)
 		self.state = nextState
 		self.timer = 0
-		if nextState == "Waiting" then
+		if nextState == "Arriving" then
+			self.Entity.TransformComponent.Position = self.home
+			self.Entity.SpriteRendererComponent.Color = Color(1, 1, 1, 1)
+			self.Entity.SpriteRendererComponent.Enable = true
+			self.Entity.CustomFootholdComponent.Enable = false
+		elseif nextState == "Waiting" then
 			self.Entity.TransformComponent.Position = self.home
 			self.Entity.SpriteRendererComponent.Color = Color(1, 1, 1, 1)
 			self.Entity.SpriteRendererComponent.Enable = true
@@ -62,7 +73,7 @@ script CrumblingPlatform extends Component
 	@ExecSpace("ServerOnly")
 	method void PlaceAt(Vector3 here)
 		self.home = here
-		self:ChangeState("Waiting")
+		self:ChangeState("Arriving")
 	end
 
 	@ExecSpace("ServerOnly")
