@@ -5476,6 +5476,81 @@
           ],
           "@version": 1
         }
+      },
+      {
+        "id": "37bef4ab-19e7-444e-8b92-8518f139d8dc",
+        "path": "/maps/map01/Crumble1",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.CustomFootholdComponent",
+        "jsonString": {
+          "name": "Crumble1",
+          "path": "/maps/map01/Crumble1",
+          "nameEditable": true,
+          "enable": true,
+          "visible": true,
+          "localize": false,
+          "displayOrder": 70,
+          "pathConstraints": "///",
+          "revision": 1,
+          "origin": {
+            "type": "Model",
+            "entry_id": "Foothold",
+            "sub_entity_id": null,
+            "root_entity_id": "49c97ec1-0c0a-4d05-974c-4d281e9298dc",
+            "replaced_model_id": null
+          },
+          "modelId": "foothold",
+          "@components": [
+            {
+              "@type": "MOD.Core.TransformComponent",
+              "Rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "Position": {
+                "x": 0.0,
+                "y": 0.8,
+                "z": 0.0
+              },
+              "QuaternionRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+              },
+              "ZRotation": 0.0,
+              "Enable": true
+            },
+            {
+              "@type": "MOD.Core.SpriteRendererComponent",
+              "ActionSheet": {},
+              "EndFrameIndex": 2147483647,
+              "RenderSetting": 0,
+              "SortingLayer": "MapLayer0",
+              "SpriteRUID": "ddfb923b42084146b54fc36482087bb3",
+              "StartFrameIndex": 0,
+              "Enable": true
+            },
+            {
+              "@type": "MOD.Core.CustomFootholdComponent",
+              "IsDynamicFoothold": true,
+              "edgeLists": [
+                [
+                  {
+                    "x": -0.42,
+                    "y": 0.26
+                  },
+                  {
+                    "x": 0.42,
+                    "y": 0.26
+                  }
+                ]
+              ],
+              "Enable": true
+            }
+          ],
+          "@version": 1
+        }
       }
     ]
   }
