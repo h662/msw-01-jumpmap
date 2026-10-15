@@ -14,6 +14,12 @@ script CrumblingPlatform extends Component
 	@ExecSpace("ServerOnly")
 	method void OnUpdate(number delta)
 		if self.state == "Waiting" then
+			local before = self.timer
+			self.timer += delta
+			if before < 1 and self.timer >= 1 then
+				self.Entity.TransformComponent.Position = self.home + Vector3(0.01, 0, 0)
+				self.Entity.TransformComponent.Position = self.home
+			end
 			for i, user in ipairs(_UserService.UserEntities.Values) do
 				local body = user.RigidbodyComponent
 				local foothold = body:GetCurrentFoothold()
