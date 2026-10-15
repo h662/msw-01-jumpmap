@@ -58,4 +58,14 @@ script CrumblingPlatform extends Component
 		self.home = self.Entity.TransformComponent.Position
 	end
 
+	@ExecSpace("ServerOnly")
+	method void PlaceAt(Vector3 here)
+		
+	end
+
+	@ExecSpace("ServerOnly")
+	method void Retire()
+		
+	end
+
 end
