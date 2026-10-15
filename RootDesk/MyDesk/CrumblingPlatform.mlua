@@ -16,8 +16,7 @@ script CrumblingPlatform extends Component
 				local body = user.RigidbodyComponent
 				local foothold = body:GetCurrentFoothold()
 				if body:IsOnGround() and foothold ~= nil and foothold.OwnerId == self.Entity.Id then
-					self.state = "Shaking"
-					self.Entity.SpriteRendererComponent.Color = Color(1, 0.55, 0.55, 1)
+					self:ChangeState("Shaking")
 				end
 			end
 		end
@@ -25,7 +24,11 @@ script CrumblingPlatform extends Component
 
 	@ExecSpace("ServerOnly")
 	method void ChangeState(string nextState)
-		
+		self.state = nextState
+		self.timer = 0
+		if nextState == "Shaking" then
+			self.Entity.SpriteRendererComponent.Color = Color(1, 0.55, 0.55, 1)
+		end
 	end
 
 end
