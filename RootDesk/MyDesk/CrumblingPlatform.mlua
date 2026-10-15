@@ -38,7 +38,8 @@ script CrumblingPlatform extends Component
 		if nextState == "Shaking" then
 			self.Entity.SpriteRendererComponent.Color = Color(1, 0.55, 0.55, 1)
 		elseif nextState == "Gone" then
-			self.Entity.TransformComponent.Position = Vector3(-30, 0, 0)
+			self.Entity.SpriteRendererComponent.Enable = false
+			self.Entity.CustomFootholdComponent.Enable = false
 		end
 	end
 
