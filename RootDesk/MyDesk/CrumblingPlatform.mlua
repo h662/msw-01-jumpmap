@@ -3,6 +3,12 @@ script CrumblingPlatform extends Component
 
 	property string state = "Waiting"
 
+	property number timer = 0
+
+	property number shakeSeconds = 0.8
+
+	property number goneSeconds = 3
+
 	@ExecSpace("ServerOnly")
 	method void OnUpdate(number delta)
 		if self.state == "Waiting" then
@@ -15,6 +21,11 @@ script CrumblingPlatform extends Component
 				end
 			end
 		end
+	end
+
+	@ExecSpace("ServerOnly")
+	method void ChangeState(string nextState)
+		
 	end
 
 end
