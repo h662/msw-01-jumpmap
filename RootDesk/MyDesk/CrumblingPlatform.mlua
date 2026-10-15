@@ -1,0 +1,11 @@
+@Component
+script CrumblingPlatform extends Component
+
+	property string state = "Waiting"
+
+	@ExecSpace("ServerOnly")
+	method void OnUpdate(number delta)
+		
+	end
+
+end

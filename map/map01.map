@@ -5480,7 +5480,7 @@
       {
         "id": "37bef4ab-19e7-444e-8b92-8518f139d8dc",
         "path": "/maps/map01/Crumble1",
-        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.CustomFootholdComponent",
+        "componentNames": "MOD.Core.TransformComponent,MOD.Core.SpriteRendererComponent,MOD.Core.CustomFootholdComponent,script.CrumblingPlatform",
         "jsonString": {
           "name": "Crumble1",
           "path": "/maps/map01/Crumble1",
@@ -5546,6 +5546,10 @@
                   }
                 ]
               ],
+              "Enable": true
+            },
+            {
+              "@type": "script.CrumblingPlatform",
               "Enable": true
             }
           ],
