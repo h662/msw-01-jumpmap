@@ -164,6 +164,10 @@ script FloorBuilder extends Component
 		                ---@type PlatformMover
 		                local mover = piece.entity:GetComponent("script.PlatformMover")
 		                mover:StopMoving()
+		            elseif piece.kind == "Crumble" then
+		                ---@type CrumblingPlatform
+		                local crumbling = piece.entity:GetComponent("script.CrumblingPlatform")
+		                crumbling:Retire()
 		            end
 		            piece.entity.TransformComponent.Position = Vector3(-30, 0, 0)
 		            table.insert(self.stock[piece.kind], piece.entity)
