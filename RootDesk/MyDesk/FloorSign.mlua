@@ -3,7 +3,7 @@ script FloorSign extends Component
 
 	@ExecSpace("ServerOnly")
 	method void Show(string text)
-		
+		self.Entity:GetChildByName("Label").TextRendererComponent.Text = text
 	end
 
 end
