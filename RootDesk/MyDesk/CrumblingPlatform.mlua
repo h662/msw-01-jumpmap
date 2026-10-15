@@ -21,6 +21,13 @@ script CrumblingPlatform extends Component
 					self:ChangeState("Shaking")
 				end
 			end
+		elseif self.state == "Shaking" then
+			self.timer += delta
+			local shake = math.sin(self.timer * 60) * 0.03
+			self.Entity.TransformComponent.Position = self.home + Vector3(shake, 0, 0)
+			if self.timer >= self.shakeSeconds then
+				self:ChangeState("Gone")
+			end
 		end
 	end
 
@@ -30,12 +37,14 @@ script CrumblingPlatform extends Component
 		self.timer = 0
 		if nextState == "Shaking" then
 			self.Entity.SpriteRendererComponent.Color = Color(1, 0.55, 0.55, 1)
+		elseif nextState == "Gone" then
+			self.Entity.TransformComponent.Position = Vector3(-30, 0, 0)
 		end
 	end
 
 	@ExecSpace("ServerOnly")
 	method void OnBeginPlay()
-		
+		self.home = self.Entity.TransformComponent.Position
 	end
 
 end
