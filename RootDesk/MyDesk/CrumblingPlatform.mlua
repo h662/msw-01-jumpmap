@@ -47,25 +47,21 @@ script CrumblingPlatform extends Component
 			self.Entity.CustomFootholdComponent.Enable = true
 		elseif nextState == "Shaking" then
 			self.Entity.SpriteRendererComponent.Color = Color(1, 0.55, 0.55, 1)
-		elseif nextState == "Gone" then
+		elseif nextState == "Gone" or nextState == "Off" then
 			self.Entity.SpriteRendererComponent.Enable = false
 			self.Entity.CustomFootholdComponent.Enable = false
 		end
 	end
 
 	@ExecSpace("ServerOnly")
-	method void OnBeginPlay()
-		self.home = self.Entity.TransformComponent.Position
-	end
-
-	@ExecSpace("ServerOnly")
 	method void PlaceAt(Vector3 here)
-		
+		self.home = here
+		self:ChangeState("Waiting")
 	end
 
 	@ExecSpace("ServerOnly")
 	method void Retire()
-		
+		self:ChangeState("Off")
 	end
 
 end

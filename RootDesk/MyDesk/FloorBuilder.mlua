@@ -12,7 +12,7 @@ script FloorBuilder extends Component
 	@ExecSpace("ServerOnly")
 	method void OnBeginPlay()
 		        local away = Vector3(-30, 0, 0)
-		        self.stock = { Long = {}, Short = {}, Exit = {}, Mover = {}, Spike = {}, Fire = {} }
+		        self.stock = { Long = {}, Short = {}, Exit = {}, Mover = {}, Crumble = {}, Spike = {}, Fire = {} }
 		        for i = 1, 21 do
 		            local long = self.Entity:GetChildByName("Platform" .. i)
 		            local short = self.Entity:GetChildByName("Short" .. i)
@@ -30,6 +30,14 @@ script FloorBuilder extends Component
 		            local mover = self.Entity:GetChildByName("Mover" .. i)
 		            mover.TransformComponent.Position = away
 		            table.insert(self.stock.Mover, mover)
+		        end
+		        for i = 1, 6 do
+		            local crumble = self.Entity:GetChildByName("Crumble" .. i)
+		            ---@type CrumblingPlatform
+		            local crumbling = crumble:GetComponent("script.CrumblingPlatform")
+		            crumbling:Retire()
+		            crumble.TransformComponent.Position = away
+		            table.insert(self.stock.Crumble, crumble)
 		        end
 		        for i = 1, 6 do
 		            local spike = self.Entity:GetChildByName("Spike" .. i)
