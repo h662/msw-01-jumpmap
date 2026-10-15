@@ -28,6 +28,11 @@ script CrumblingPlatform extends Component
 			if self.timer >= self.shakeSeconds then
 				self:ChangeState("Gone")
 			end
+		elseif self.state == "Gone" then
+			self.timer += delta
+			if self.timer >= self.goneSeconds then
+				self:ChangeState("Waiting")
+			end
 		end
 	end
 
@@ -35,7 +40,12 @@ script CrumblingPlatform extends Component
 	method void ChangeState(string nextState)
 		self.state = nextState
 		self.timer = 0
-		if nextState == "Shaking" then
+		if nextState == "Waiting" then
+			self.Entity.TransformComponent.Position = self.home
+			self.Entity.SpriteRendererComponent.Color = Color(1, 1, 1, 1)
+			self.Entity.SpriteRendererComponent.Enable = true
+			self.Entity.CustomFootholdComponent.Enable = true
+		elseif nextState == "Shaking" then
 			self.Entity.SpriteRendererComponent.Color = Color(1, 0.55, 0.55, 1)
 		elseif nextState == "Gone" then
 			self.Entity.SpriteRendererComponent.Enable = false
