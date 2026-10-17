@@ -13,7 +13,7 @@ script FloorBuilder extends Component
 	method void OnBeginPlay()
 		        local away = Vector3(-30, 0, 0)
 		        self.stock = { Long = {}, Short = {}, Exit = {}, Mover = {}, Crumble = {}, Spike = {}, Fire = {}, Sign = {} }
-		        for i = 1, 21 do
+		        for i = 1, 42 do
 		            local long = self.Entity:GetChildByName("Platform" .. i)
 		            local short = self.Entity:GetChildByName("Short" .. i)
 		            long.TransformComponent.Position = away
@@ -21,17 +21,17 @@ script FloorBuilder extends Component
 		            table.insert(self.stock.Long, long)
 		            table.insert(self.stock.Short, short)
 		        end
-		        for i = 1, 6 do
+		        for i = 1, 12 do
 		            local exit = self.Entity:GetChildByName("Exit" .. i)
 		            exit.TransformComponent.Position = away
 		            table.insert(self.stock.Exit, exit)
 		        end
-		        for i = 1, 6 do
+		        for i = 1, 12 do
 		            local mover = self.Entity:GetChildByName("Mover" .. i)
 		            mover.TransformComponent.Position = away
 		            table.insert(self.stock.Mover, mover)
 		        end
-		        for i = 1, 6 do
+		        for i = 1, 12 do
 		            local crumble = self.Entity:GetChildByName("Crumble" .. i)
 		            ---@type CrumblingPlatform
 		            local crumbling = crumble:GetComponent("script.CrumblingPlatform")
@@ -39,17 +39,17 @@ script FloorBuilder extends Component
 		            crumble.TransformComponent.Position = away
 		            table.insert(self.stock.Crumble, crumble)
 		        end
-		        for i = 1, 6 do
+		        for i = 1, 12 do
 		            local spike = self.Entity:GetChildByName("Spike" .. i)
 		            spike.TransformComponent.Position = away
 		            table.insert(self.stock.Spike, spike)
 		        end
-		        for i = 1, 6 do
+		        for i = 1, 12 do
 		            local fire = self.Entity:GetChildByName("Fire" .. i)
 		            fire.TransformComponent.Position = away
 		            table.insert(self.stock.Fire, fire)
 		        end
-		        for i = 1, 6 do
+		        for i = 1, 12 do
 		            local sign = self.Entity:GetChildByName("Sign" .. i)
 		            sign.TransformComponent.Position = away
 		            table.insert(self.stock.Sign, sign)
