@@ -126,8 +126,13 @@ script FloorBuilder extends Component
 		                fireAt = shorts[_UtilLogic:RandomIntegerRange(1, #shorts)]
 		            end
 		        end
+		        local isComplete = true
 		        for i, spot in ipairs(layout) do
 		            local platform = table.remove(self.stock[spot.kind])
+		            if platform == nil then
+		                isComplete = false
+		                break
+		            end
 		            local here = Vector3(spot.x, floor * 4 + spot.y, 0)
 		            if spot.kind == "Mover" then
 		                ---@type PlatformMover
