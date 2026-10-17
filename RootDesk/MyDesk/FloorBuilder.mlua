@@ -128,7 +128,7 @@ script FloorBuilder extends Component
 		        end
 		        local isComplete = true
 		        for i, spot in ipairs(layout) do
-		            local platform = table.remove(self.stock[spot.kind])
+		            local platform = table.remove(self.stock[spot.kind], 1)
 		            if platform == nil then
 		                isComplete = false
 		                break
@@ -147,19 +147,19 @@ script FloorBuilder extends Component
 		            end
 		            table.insert(pieces, { kind = spot.kind, entity = platform })
 		            if i == spikeAt and #self.stock.Spike > 0 then
-		                local spike = table.remove(self.stock.Spike)
+		                local spike = table.remove(self.stock.Spike, 1)
 		                spike.TransformComponent.Position = here + Vector3(0, 0.26, 0)
 		                table.insert(pieces, { kind = "Spike", entity = spike })
 		            end
 		            if i == fireAt and #self.stock.Fire > 0 then
-		                local fire = table.remove(self.stock.Fire)
+		                local fire = table.remove(self.stock.Fire, 1)
 		                fire.TransformComponent.Position = here + Vector3(0, 0.33, 0)
 		                table.insert(pieces, { kind = "Fire", entity = fire })
 		            end
 		        end
 		        if isComplete and #self.stock.Exit > 0 then
 		            local last = layout[7]
-		            local exit = table.remove(self.stock.Exit)
+		            local exit = table.remove(self.stock.Exit, 1)
 		            exit.TransformComponent.Position = Vector3(last.x, floor * 4 + last.y, 0)
 		            ---@type FloorExit
 		            local floorExit = exit:GetComponent("script.FloorExit")
@@ -167,7 +167,7 @@ script FloorBuilder extends Component
 		            table.insert(pieces, { kind = "Exit", entity = exit })
 		        end
 		        if #self.stock.Sign > 0 then
-		            local sign = table.remove(self.stock.Sign)
+		            local sign = table.remove(self.stock.Sign, 1)
 		            sign.TransformComponent.Position = Vector3(0.9, floor * 4 + 0.45, 0)
 		            ---@type FloorSign
 		            local floorSign = sign:GetComponent("script.FloorSign")
