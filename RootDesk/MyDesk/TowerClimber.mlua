@@ -23,7 +23,12 @@ script TowerClimber extends Component
 		self:TeleportTo(Vector3(0, nextFloor * 4 + 0.5, 0))
 		---@type FloorBuilder
 		local builder = self.Entity.CurrentMap:GetComponent("script.FloorBuilder")
-		builder:RefreshFloors()
+		if builder.built[nextFloor + 1] == nil then
+			builder:BuildFloor(nextFloor + 1)
+		end
+		_TimerService:SetTimerOnce(function()
+			builder:RefreshFloors()
+		end, 3)
 	end
 
 	@ExecSpace("ClientOnly")
